@@ -14,6 +14,9 @@ public class CustomArrayListImpl<T extends Comparable<T>> implements CustomArray
      */
     private static final float FACTOR = 1.5F;
 
+    /**
+     * Емкость массива для хранения элементов
+     */
     private static final int CAPACITY = 10;
     /**
      * Массив для непосредственного хранения элементов коллекции
