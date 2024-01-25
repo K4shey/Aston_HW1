@@ -5,6 +5,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+// названия методов не соответствуют конвенциям и неинформативны
+// старайся придерживаться given when then
 public class CustomArrayListImplTest {
 
     CustomArrayList<String> myArrayList;

@@ -89,7 +89,7 @@ public class CustomArrayListImpl<T extends Comparable<T>> implements CustomArray
      * @return boolean результат удаления
      */
     public boolean remove(T element) {
-        int index = indexOf(element);
+        int index = indexOf(element); // если передадут null в indexOf будет NPE
         if (index != -1) {
             remove(index);
             return true;
@@ -120,7 +120,7 @@ public class CustomArrayListImpl<T extends Comparable<T>> implements CustomArray
      */
     public int indexOf(T element) {
         for (int i = 0; i < size; i++) {
-            if (element.equals(array[i])) {
+            if (element.equals(array[i])) {// NPE
                 return i;
             }
         }
