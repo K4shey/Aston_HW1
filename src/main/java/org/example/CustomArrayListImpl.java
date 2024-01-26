@@ -119,9 +119,11 @@ public class CustomArrayListImpl<T extends Comparable<T>> implements CustomArray
      * @return позиция элемента если найден, -1 в противном случае
      */
     public int indexOf(T element) {
-        for (int i = 0; i < size; i++) {
-            if (element.equals(array[i])) {
-                return i;
+        if (element != null) {
+            for (int i = 0; i < size; i++) {
+                if (element.equals(array[i])) {
+                    return i;
+                }
             }
         }
         return -1;
